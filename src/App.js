@@ -4,59 +4,58 @@ import Profile from "./components/Profile";
 function App() {
 
   const [profiles] = useState([
+
     {
-      name: "Channendler Bing :)",
-      img_src: "https://i.pinimg.com/originals/6a/6e/6d/6a6e6de6e91b28c132d593ea726e4edb.jpg"
+      name: "Phoebe Buffay",
+      img_src: "https://i.pinimg.com/originals/12/a5/38/12a538c8b4778d8574838d8480367c9e.jpg"
+  },
+  {
+      name: "Monica Geller",
+      img_src: "https://upload.wikimedia.org/wikipedia/en/d/d0/Courteney_Cox_as_Monica_Geller.jpg"
+  },
+  {
+      name: "Phoebe Buffay",
+      img_src: "https://i.pinimg.com/originals/54/fb/56/54fb56cd967a95e587973da2833cf540.jpg"
+  },
+    {
+      name: "Chandler Bing",
+      img_src: "https://i.pinimg.com/originals/b5/51/a6/b551a678cf459272a4d39d917d9f3e63.png"
     },
     {
         name: "Rachel Green",
-        img_src: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vulture.com%2F2014%2F12%2Ffriends-countdown-is-rachel-green-jewish.html&psig=AOvVaw0Y2n4RuPLG1oOfTWIsmFvg&ust=1637435875219000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKjB8ZKSpfQCFQAAAAAdAAAAABAD"
+        img_src: "https://www.cheatsheet.com/wp-content/uploads/2020/07/jennifer-aniston-friends-1994-1024x797.jpg"
     },
     {
-      name: "Rachel Green",
-      img_src: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vulture.com%2F2014%2F12%2Ffriends-countdown-is-rachel-green-jewish.html&psig=AOvVaw0Y2n4RuPLG1oOfTWIsmFvg&ust=1637435875219000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKjB8ZKSpfQCFQAAAAAdAAAAABAD"
+      name: "Chandler Bing",
+      img_src: "https://upload.wikimedia.org/wikipedia/en/6/66/Matthew_Perry_as_Chandler_Bing.png"
+    },
+    {
+      name: "Ross Geller",
+      img_src: "https://i.pinimg.com/originals/a7/1e/c4/a71ec44bef244c67612351c305dcd466.jpg"
+    },
+    {
+      name: "Joey Tribbiani",
+      img_src: "https://upload.wikimedia.org/wikipedia/en/d/da/Matt_LeBlanc_as_Joey_Tribbiani.jpg"
   },
-  {
-    name: "Rachel Green",
-    img_src: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vulture.com%2F2014%2F12%2Ffriends-countdown-is-rachel-green-jewish.html&psig=AOvVaw0Y2n4RuPLG1oOfTWIsmFvg&ust=1637435875219000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKjB8ZKSpfQCFQAAAAAdAAAAABAD"
-},
-{
-  name: "Rachel Green",
-  img_src: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vulture.com%2F2014%2F12%2Ffriends-countdown-is-rachel-green-jewish.html&psig=AOvVaw0Y2n4RuPLG1oOfTWIsmFvg&ust=1637435875219000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKjB8ZKSpfQCFQAAAAAdAAAAABAD"
-},
-{
-  name: "Rachel Green",
-  img_src: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vulture.com%2F2014%2F12%2Ffriends-countdown-is-rachel-green-jewish.html&psig=AOvVaw0Y2n4RuPLG1oOfTWIsmFvg&ust=1637435875219000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKjB8ZKSpfQCFQAAAAAdAAAAABAD"
-},
-{
-  name: "Rachel Green",
-  img_src: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vulture.com%2F2014%2F12%2Ffriends-countdown-is-rachel-green-jewish.html&psig=AOvVaw0Y2n4RuPLG1oOfTWIsmFvg&ust=1637435875219000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKjB8ZKSpfQCFQAAAAAdAAAAABAD"
-},
-{
-  name: "Rachel Green",
-  img_src: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vulture.com%2F2014%2F12%2Ffriends-countdown-is-rachel-green-jewish.html&psig=AOvVaw0Y2n4RuPLG1oOfTWIsmFvg&ust=1637435875219000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKjB8ZKSpfQCFQAAAAAdAAAAABAD"
-},
-{
-  name: "Rachel Green",
-  img_src: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vulture.com%2F2014%2F12%2Ffriends-countdown-is-rachel-green-jewish.html&psig=AOvVaw0Y2n4RuPLG1oOfTWIsmFvg&ust=1637435875219000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKjB8ZKSpfQCFQAAAAAdAAAAABAD"
-},
     {
-        name: "Monica Geller",
-        img_src: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMonica_Geller&psig=AOvVaw3b68gLIPnog2nI2pbQbjjK&ust=1637435908804000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLjymKWSpfQCFQAAAAAdAAAAABAa"
+      name: "Monica Geller",
+      img_src: "https://assets.mycast.io/characters/monica-geller-bing-29216-normal.jpg?1578007930"
     },
-    { 
-        name: "Phoebe Buffay",
-        img_src: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.popsugar.com%2Fentertainment%2FPhoebe-Buffay-Quotes-From-Friends-43785815&psig=AOvVaw3d91jLjjHq1G4vySqhoEjz&ust=1637435988436000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNC0wceSpfQCFQAAAAAdAAAAABAJ"
+    {
+      name: "Chandler Bing",
+      img_src: "https://upload.wikimedia.org/wikipedia/en/6/66/Matthew_Perry_as_Chandler_Bing.png"
+    },
+    {
+      name: "Pheobe Buffay",
+      img_src: "https://upload.wikimedia.org/wikipedia/en/f/f6/Friendsphoebe.jpg"
     },
     {
         name: "Joey Tribbiani",
-        img_src: "https://www.google.com/url?sa=i&url=https%3A%2F%2Ffriends.fandom.com%2Fwiki%2FJoey_Tribbiani&psig=AOvVaw0XnfkqA5i7W9xdE_ie7qmN&ust=1637436027537000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNiF9duSpfQCFQAAAAAdAAAAABAD"
+        img_src: "https://i.pinimg.com/originals/cb/3b/1e/cb3b1eb00208fed6de805ffe05d0fcaf.jpg"
     },
-    {
-        name:"Ross Geller",
-        img_src: "https://www.google.com/url?sa=i&url=https%3A%2F%2Ficonsoffriends.tumblr.com%2Fpost%2F182227730092%2Fembed&psig=AOvVaw1Twt4SOQ1gDZKWjkG34HI6&ust=1637436051366000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNC4s-eSpfQCFQAAAAAdAAAAABAc"
-        
-    }
+
+  
+
 
   ])
 

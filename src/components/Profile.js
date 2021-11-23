@@ -6,9 +6,15 @@ const Profile = (props) => (
         <div className="image-cropper">
              <img width="auto" height="100rem" src={props.profiles.img_src} alt="" className="profile-pic"/>
         </div>
-        <h1><span className="name"></span></h1>
+       
+        <h1>
+            <span className="name">
+                {props.profiles.name}
+            </span>
+        </h1>
+        
         <h4>California, LA</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
         
         <Footer />
    

@@ -26,7 +26,7 @@
   display: inline;
   margin: 0 auto;
   margin-left: -25%;
-  height: 250%;
+  height: 150%;
   width: auto;
   
 }
@@ -74,10 +74,9 @@ code {
   height: 3rem;
   display: flex;
   flex-direction: column;
-  background-color: rgb(158, 158, 158);
+  background-color: rgb(174, 195, 195);
   float: left;
-  /* border: 1pt solid rgb(54, 52, 83); */
-  border: 0.1px dashed gray;
+  border: 0.1px solid rgb(144, 172, 145);
   justify-content: center;
   text-align: center;
   
@@ -96,4 +95,9 @@ code {
   justify-content: center;
   text-align: center;
   color: rgb(83, 83, 83);
+}
+
+
+h1 {
+  font-size: small;
 }
