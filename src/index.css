@@ -2,9 +2,41 @@
   box-sizing: border-box;
 }
 
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+
+}
+
+.image-cropper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  
+}
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%;
+  height: 250%;
+  width: auto;
+  
+}
+
 body {
-  margin: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(214, 213, 213);
+  
 }
 
 code {
@@ -14,13 +46,54 @@ code {
 
 
 .profile {
-  width: 30%;
-  height: 50%;
+  padding: 10px;
+  margin: 25px;
+  width: 300px;
+  height: 40%;
   display: inline-block;
+  /* background: linear-gradient(to bottom, rgba(56, 182, 39, 0.746), rgb(110, 110, 245)); */
+  background-color: blanchedalmond;
+  border:0.=px solid gray;
+  align-items: center;
+  box-shadow: 5px 10px 5px gray;
+ 
+ 
+  
 } 
 
-button{
+
+
+.footer {
+  justify-content: center;
+  text-align: center;
+  display: block;
+
+}
+.footer-info {
   width: 30%;
-  height: 20%;
-  background-color: antiquewhite;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(158, 158, 158);
+  float: left;
+  /* border: 1pt solid rgb(54, 52, 83); */
+  border: 0.1px dashed gray;
+  justify-content: center;
+  text-align: center;
+  
+}
+.footer-info > h5{
+  justify-content: center;
+  text-align: center;
+  color: rgb(19, 78, 19);
+  margin: auto;
+  font-size: xx-small;
+ 
+}
+
+.footer-info > h6 {
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  color: rgb(83, 83, 83);
 }

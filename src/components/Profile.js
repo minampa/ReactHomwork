@@ -1,17 +1,17 @@
 import React from 'react'
+import Footer from './Footer'
 
 const Profile = (props) => (
     <div className ="profile">
-        <div>
-        <img src={props.profiles.img_src} alt="" />
+        <div className="image-cropper">
+             <img width="auto" height="100rem" src={props.profiles.img_src} alt="" className="profile-pic"/>
         </div>
         <h1><span className="name"></span></h1>
         <h4>California, LA</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <button>
-            <h4>projects</h4>
-            <h3>200</h3>
-        </button>
+        
+        <Footer />
+   
     </div>
 )
 
